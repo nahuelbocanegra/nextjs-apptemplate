@@ -1,18 +1,14 @@
+import React from 'react'
+import Layout from '@/components/Layout'
+import Cards from '@/components/Cards'
 
-import { Inter } from '@next/font/google';
-import Layout from "../components/Layout";
-import Cards from '@/components/Cards';
-import ComponetHeader from '@/components/ComponetHeader';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export default function Home() {
+export default function torneos() {
   return (
-   
-    <Layout>
-      <ComponetHeader></ComponetHeader>
-      <section className='section-home'>
-        <article className="article-home p-5">
+    <div>
+<Layout>
+    <section className='section-home'>
+        <article className="article-home">
           
       <div className='flex flex-col gap-1'>
           <h2 className="text-title-card">Populares en Querétaro</h2>
@@ -21,7 +17,7 @@ export default function Home() {
       
           <Cards></Cards>
         </article >
-        <article className="article-home p-5">
+        <article className="article-home">
       <div className='flex flex-col gap-1'>
           <h2 className="text-title-card">Sugerencias para ti</h2>
           <p className="subtitle-card">Publicaciones que podrías colaborar</p>
@@ -41,7 +37,7 @@ export default function Home() {
           </div>
           <a href="" className='link-interses' >Ver todos los intereses</a>
         </article>
-        <article className="article-home p-5">
+        <article className="article-home">
       <div className='flex flex-col gap-1'>
           <h2 className="text-title-card">Recientes</h2>
           <p className="subtitle-card">Las personas ultimamente están hablando de esto</p>
@@ -49,11 +45,11 @@ export default function Home() {
       
         <Cards></Cards>
         </article>
-
-
       </section>
-    </Layout>
-     
-   
-  );
+
+
+
+   </Layout>
+    </div>
+  )
 }

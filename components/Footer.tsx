@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import ImgFooter from '../public/Rectangle 21.png'
+
 
 export default function Footer() {
   return (
