@@ -1,21 +1,20 @@
-import React from 'react'
-import Footer from './Footer'
+import React from 'react';
+import Footer from './Footer';
 
-import Header from './Header'
+import Header from './Header';
 
 interface ILayout {
-    children:React.ReactNode
-} 
+  children: React.ReactNode;
+}
 
-
-export default function Layout({ children }:ILayout) {
+export default function Layout({ children }: ILayout) {
   return (
-   <>
-    <Header></Header>
+    <>
+      <Header></Header>
 
-    <main>{children}</main>
-    
-    <Footer></Footer>
-   </>
-  )
+      <main>{children}</main>
+
+      <Footer></Footer>
+    </>
+  );
 }
