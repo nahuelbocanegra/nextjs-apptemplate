@@ -30,15 +30,43 @@ export default function Post() {
         </button>
       </div>
       <div className="div-createPublication__two">
-        <button className="text-blue-800 pl-12 text-xl font-medium   pt-8">
-          Back
-        </button>
+        <a href="http://localhost:3000/create-publication">
+          <button className="text-blue-800 pl-12 text-xl font-medium pt-8">
+            Back
+          </button>
+        </a>
         <div className="relative progress-bar pt-9">
           <div className="progress-bar__tree bg-blue-800"></div>
         </div>
-        <div className="container-info__create">
-          <h2 className="pt-16 text-2xl font-medium ">Fotos</h2>
+        <div className='div-fotos'>
+          <div className="container-info__create">
+            <h2 className="pt-10 text-2xl font-medium ">Fotos</h2>
+            <p className="text-gray-600 pt-3 pb-3">
+              Selecciona máximo tres fotos para crear una galeria
+            </p>
+            <div className="container-pics mt-14">
+              <div>
+                <button className='text-blue-900'>+</button>
+              </div>
+              <div>
+                <button className='text-blue-900'>+</button>
+              </div>
+              <div>
+                <button className='text-blue-900'>+</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="button-siguiente__createPublication">
+              <a
+                className="m-auto h-full w-full"
+                href=""
+              >
+                <button className=" text-white rou w-11 bg-blue-800 text-xl font-medium">
+                  Publicar
+                </button>
+              </a>
+            </div>
       </div>
     </div>
   );

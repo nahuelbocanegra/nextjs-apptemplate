@@ -10,7 +10,7 @@ export default function createPublication() {
         <Image
           className="bg-transparent m-auto pt-16"
           src={paraCuando}
-          alt="para cuando" 
+          alt="para cuando"
         />
         <Image
           className="bg-transparent m-auto"
@@ -30,8 +30,12 @@ export default function createPublication() {
         </button>
       </div>
       <div className="div-createPublication__two">
-        <button className="text-blue-800 pl-12 text-xl font-medium pt-8">Back</button>
-        <div className="relative progress-bar pt-9">
+        <a href="http://localhost:3000/">
+          <button className="text-blue-800 pl-6 text-xl font-medium pt-8">
+            Back
+          </button>
+        </a>
+        <div className="relative progress-bar pt-8    ">
           <div className="progress-bar__one bg-gray-300"></div>
           <div className="progress-bar__two bg-blue-800"></div>
         </div>
@@ -39,10 +43,10 @@ export default function createPublication() {
           <h2 className=" h2-createPublication font-medium text-2xl">
             Publicación
           </h2>
-          <p className="text-gray-600 pt-3 pb-7">Información basica</p>
+          <p className="text-gray-600 pt-3 pb-3">Información basica</p>
           <form className="pt-6">
             <div className=" relative div-title__createPublication h-11 border-solid rounded-xl">
-              <p className="p-title-createPublication absolute text-gray-600">
+              <p className="p-title-createPublication absolute bg-white text-gray-600">
                 Titulo de la publicación
               </p>
               <input
@@ -53,7 +57,7 @@ export default function createPublication() {
 
             <div className="container-typeAndCategory pt-7">
               <div className="  relative div-type__createPublication h-11 border-solid rounded-xl">
-                <select className="w-11/12 select-createPublication text-gray-600">
+                <select className="w-11/12 select-createPublication bg-white text-gray-600">
                   <option selected value="4">
                     Tipo
                   </option>
@@ -63,7 +67,7 @@ export default function createPublication() {
                 </select>
               </div>
               <div className=" relative div-category__createPublication h-11 border-solid rounded-xl">
-                <select className=" select-createPublication text-gray-600">
+                <select className=" select-createPublication bg-white text-gray-600">
                   <option selected value="4">
                     Categoria
                   </option>
@@ -80,16 +84,16 @@ export default function createPublication() {
               </div>
             </div>
             <div className=" relative div-recomendacion__createPublication mt-7 border-solid rounded-xl">
-              <p className="p-title-createPublication absolute text-gray-600">
+              <p className="p-title-createPublication absolute bg-white text-gray-600">
                 ¿Por qué lo recomiendas?
               </p>
-              <input
-                className="input-title__createPublication h-8"
-                type="text"
+              <textarea
+                className="input-recomendation__createPublication m-auto h-4/5 w-11/12"
+                maxLength={302}
               />
             </div>
             <div className=" relative div-title__createPublication mt-7 h-11 border-solid rounded-xl">
-              <p className="p-title-createPublication absolute text-gray-600">
+              <p className="p-title-createPublication absolute bg-white text-gray-600">
                 Link de referencia
               </p>
               <input
@@ -98,6 +102,16 @@ export default function createPublication() {
               />
             </div>
           </form>
+            <div className="button-siguiente__createPublication">
+              <a
+                className="m-auto h-full w-full"
+                href="http://localhost:3000/post"
+              >
+                <button className=" text-white rou w-11 bg-blue-800 text-xl font-medium">
+                  Siguiente
+                </button>
+              </a>
+            </div>
         </div>
       </div>
     </div>
