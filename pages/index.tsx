@@ -2,10 +2,28 @@ import { Inter } from '@next/font/google';
 import Layout from '../components/Layout';
 import Cards from '@/components/Cards';
 import ComponetHeader from '@/components/ComponetHeader';
+import { usePublications } from '@/lib/services/publications.services';
+import { useUsersMe } from '@/lib/services/users.services';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+
+  const {data, error, isLoading} = usePublications();
+  const {data: user} = useUsersMe();
+  console.log({user});
+
+
+
+  console.log({data, error, isLoading});
+  if (isLoading){
+    return <div>cargando....</div>
+  }
+
+  if(error){
+    return <div>ocurrio un error</div>
+  }
+
   return (
     <Layout>
       <ComponetHeader></ComponetHeader>
